@@ -1,0 +1,117 @@
+/* Default Light Mode */
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+    background-size: cover; /* Ensures the gradient covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the gradient from repeating */
+    background-position: center; /* Keeps the gradient centered */
+}
+
+/* Light Mode - Morning Sky (Gradient for Day) */
+body.light-mode {
+    background: radial-gradient(circle, #87CEEB, #B0E0E6); /* Smooth Sky Blue Gradient */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+textarea:focus {
+    border-color: #4CAF50;
+}
+
+#countdown {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#finishTest {
+    margin-top: 20px;
+    background-color: #f44336;
+}
+
+/* Dark Mode - Night Sky (Gradient for Night) */
+body.dark-mode {
+    background: radial-gradient(circle, #000080, #000000); /* Night Sky Gradient */
+    color: white;
+}
+
+/* Dark Mode Styling */
+button.dark-mode {
+    background-color: #ff9800;
+    color: #333;
+}
+
+button.dark-mode:hover {
+    background-color: #ff5722;
+}
+
+textarea.dark-mode {
+    background-color: #555;
+    color: white;
+    border-color: #888;
+}
+
+textarea.dark-mode:focus {
+    border-color: #ff9800;
+}
+
+#countdown.dark-mode, #results.dark-mode {
+    color: white;
+}
+
+#toggleButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: inherit;
+    transition: color 0.5s;
+}
+
+/* Dark Mode Styling for Toggle Button */
+body.dark-mode #toggleButton {
+    color: white;
+}
+
+body.light-mode #toggleButton {
+    color: black;
+}

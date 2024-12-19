@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div id="testSettings">
+            <label for="duration">Choose Test Duration:</label>
+            <select id="duration">
+                <option value="1">1 Minute</option>
+                <option value="3">3 Minutes</option>
+                <option value="5">5 Minutes</option>
+            </select>
+            <button id="startTest">Start Test</button>
+        </div>
+
+        <div id="testArea" style="display: none;">
+            <p id="textToDisplay"></p>
+            <textarea id="typingArea" placeholder="Start typing here..."></textarea>
+            <p id="countdown">Time Left: 00:00</p>
+            <button id="finishTest" style="display: none;">Finish Test</button>
+            <div id="results" style="display: none;">
+                <p id="wpm">WPM: 0</p>
+                <p id="accuracy">Accuracy: 0%</p>
+            </div>
+        </div>
+
+        <div id="certificate" style="display: none;">
+            <h2>Congratulations!</h2>
+            <p id="certificateMessage">You have completed the typing test!</p>
+            <p id="certificateWPM"></p>
+            <p id="certificateAccuracy"></p>
+            <button id="retryTest">Retry Test</button>
+        </div>
+    </div>
+    
+    <!-- Emoji Button in the Top Right -->
+    <button id="toggleButton" class="emoji-toggle">🌞</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
